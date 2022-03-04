@@ -1,6 +1,8 @@
+# How the App.jsx file works
+
 The variable images is initializing an array of all images.
 The function "Loading," which accepts the parameter "calculatedWidth" returns jsx code with two main elements. 
-The element <label> is related to the element <progress>. <label> labels <progress> by displaying the message "Loading all your favorite images..." before the loading <progress> element. 
+The element <label> is related to the element <progress>. <label> labels <progress> by dsipaling the message "Loading all your favorite images..." before the loading <progress> element. 
 The <progress> element displays the bar symbol that loads while the images get uploaded to the browser. It uses the parameter "calculatedWidth" to keep updating the attribute "value."
 Inside the App function, we encounter first two hooks. Both of them are instantiated with the value zero.
 The function "handleClick" uses the variable "length" to store the length of the array images. Inside of this function, we are changing the value of the first hook by using the following function "(currentImage) => currentImage < length ? currentImage + 1 : 0." This function increases the value of the first hook every time the function  "handleClick" is called. 
